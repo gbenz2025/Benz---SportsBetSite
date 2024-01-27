@@ -15,7 +15,7 @@
 <h2> 
     <hr />
 <?php
-$db = new mysqli("localhost", "root", "", "doofighters");
+$db = new mysqli("localhost", "root", "", "dumbluck");
 if ($db->connect_errno)
     die("Could not connect to DB");
 
@@ -28,8 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$teamB = $_POST["teamB"];
 		$team2odds = $_POST["team2odds"];
 
-// This below is extra code outside of class that I 
-// decided was the easiest way to figure out how to get the results I wanted
+
     for ($i = 0; $i < count($amountForA); $i++) {
         $amountA = $amountForA[$i];
         $amountB = $amountForB[$i];
@@ -50,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <br>
 <?php
-$db = new mysqli("localhost", "root", "", "doofighters");
+$db = new mysqli("localhost", "root", "", "dumbluck");
 if ($db->connect_errno)
     die("Could not connect to DB");
 
@@ -60,8 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$amountForPlayer = $_POST['amountForPlayer'];
 		$playerOdds = $_POST['playerOdds'];
 		$userID = $_POST['userID'];
-
-	// Same deal here
+	
 		for ($i = 0; $i < count($player); $i++) {
 			$playerName = $player[$i];
 			$betAmount = $amountForPlayer[$i];
