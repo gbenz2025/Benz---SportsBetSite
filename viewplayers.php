@@ -14,7 +14,7 @@
 	<hr />
 	
 <?php
-    $db = new mysqli("localhost", "root", "", "doofighters");
+    $db = new mysqli("localhost", "root", "", "dumbluck");
     if ($db->connect_errno) {
         die("Could not connect to DB");
     }
@@ -22,7 +22,6 @@
         $query = "SELECT * FROM PLAYER";
         $result = $db->query($query);
 
-		//again adding this code to help display data
         //if ($result && $result->num_rows > 0) {
         //    $row = $result->fetch_assoc();
 		if ($result->num_rows > 0) {
