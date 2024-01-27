@@ -15,7 +15,7 @@
 
 <h2> Game Bets: </h2>
 <?php
-	$db = new mysqli("localhost", "root", "", "doofighters");
+	$db = new mysqli("localhost", "root", "", "dumbluck");
 	if ($db->connect_errno) {
 		die("Could not connect to DB");
 	}
@@ -39,7 +39,7 @@ if ($resultTeams->num_rows > 0) {
                 <td>Odds</td>
                 <td>Bet B Amount</td>
             </tr>
-<?php		//I put this while loop in to help with narrowing the code
+<?php	
             while ($row = $resultTeams->fetch_assoc()) {
 ?>
                 <tr>
