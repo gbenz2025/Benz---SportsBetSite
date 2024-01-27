@@ -37,6 +37,3 @@
 	</form>
 		
 		<p> <a href="actions.php"> Return to Last Page</a></p>
-		
-	</body>
-</html>
