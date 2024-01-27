@@ -14,7 +14,7 @@
 	<hr />
 	
 <?php
-    $db = new mysqli("localhost", "root", "", "doofighters");
+    $db = new mysqli("localhost", "root", "", "dumbluck");
     if ($db->connect_errno) {
         die("Could not connect to DB");
     }
@@ -25,7 +25,6 @@
         $query = "SELECT * FROM TEAM_BETS WHERE userID = '$userID'";
         $result = $db->query($query);
 
-		//again adding this code to help display data
 		if ($result->num_rows > 0) {
             ?>
             <table border="1">
@@ -63,7 +62,7 @@
 <hr />
 
 <?php
-    $db = new mysqli("localhost", "root", "", "doofighters");
+    $db = new mysqli("localhost", "root", "", "dumbluck");
     if ($db->connect_errno) {
         die("Could not connect to DB");
     }
@@ -74,7 +73,6 @@
         $query = "SELECT * FROM PLAYER_BETS WHERE userID = '$userID'";
         $result = $db->query($query);
 
-		//again adding this code to help display data
 		if ($result->num_rows > 0) {
             ?>
             <table border="1">
