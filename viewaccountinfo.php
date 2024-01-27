@@ -14,7 +14,7 @@
 	<hr />
 	
 <?php
-    $db = new mysqli("localhost", "root", "", "doofighters");
+    $db = new mysqli("localhost", "root", "", "dumbluck");
     if ($db->connect_errno) {
         die("Could not connect to DB");
     }
