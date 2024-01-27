@@ -10,7 +10,7 @@
 		</style>
 	</head>
 	<body>
-		<h1> DooFighters </h1>
+		<h1> DumbLuck </h1>
 		<hr />
 		<h2> Login / Sign Up: </h2>
 		<form method="post" action="actions.php">
